@@ -7,3 +7,61 @@ body {
   align-items: center;
   height: 100vh;
 }
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.timer-display {
+  font-size: 48px;
+  margin: 20px 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#start {
+  background-color: #28a745;
+  color: white;
+}
+
+#stop {
+  background-color: #ffc107;
+  color: white;
+}
+
+#reset {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
