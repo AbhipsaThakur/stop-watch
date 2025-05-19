@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -6,18 +7,23 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Container Styling */
 .container {
   text-align: center;
   background: #1e1e1e;
   padding: 40px 30px;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(255, 105, 180, 0.3);
-  width: 320px;
+  width: 100%;
+  max-width: 360px;
   animation: fadeIn 0.8s ease;
 }
 
+/* Fade-in Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -29,32 +35,40 @@ body {
   }
 }
 
+/* Heading */
 h1 {
   margin-bottom: 15px;
   font-size: 28px;
   color: #ff69b4;
 }
 
+/* Stopwatch Icon */
 .stopwatch-icon {
   width: 60px;
   margin-bottom: 10px;
 }
 
+/* Time Display */
 .timer-display {
   font-size: 48px;
   margin: 20px 0;
   font-weight: 600;
   color: #fff;
+  word-wrap: break-word;
 }
 
+/* Button Container */
 .buttons {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
+/* Buttons */
 button {
-  flex: 1;
+  flex: 1 1 100px;
+  min-width: 80px;
   padding: 10px 15px;
   font-size: 16px;
   font-weight: 500;
@@ -70,4 +84,16 @@ button {
 button:hover {
   background-color: #ff85c1;
   transform: scale(1.05);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 400px) {
+  .timer-display {
+    font-size: 36px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
